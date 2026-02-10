@@ -1,24 +1,23 @@
+const nums1 = [1, 2, 3, 4]
+const nums2 = [5, 6, 7, 8, 9]
 
-const num1 = [1,2,3,4]
-const nam = "Priyanshu"
-const num2 = [12,2,32,4]
-const user={
-    name :"happpy",
-    age: 69
+const myName = 'Priyanshu'
+
+const joinedArray = [...nums1, ...nums2, 10, 11, 12]
+
+const user = {
+    name: 'Priyanshu',
+    age: 25,
 }
 
-// console.log((num1.concat(num2)));
-const join = [...num1, ...num2, ...nam]
+const updatedUser = {...user, city: 'Bangalore'}
 
-const updatedUser = {...user, home:"india"}
-console.log(join);
-console.log(updatedUser);
-
-
-function add(){
-    let sum = 0;
-    for(let i = 0;i < arguments.length; i++){
-       sum = sum + arguments[i]        
+function add() {
+    console.log(arguments);
+    let sum = 0
+    for(let i = 0; i < arguments.length; i++) {
+        sum = sum + arguments[i]
     }
+
     return sum
 }
