@@ -17,9 +17,8 @@ console.log(updatedUser);
 
 function add(){
     let sum = 0;
-    for(let i = 0;i<arguments.length; i++){
+    for(let i = 0;i < arguments.length; i++){
        sum = sum + arguments[i]        
     }
     return sum
 }
-add(5,7845)
